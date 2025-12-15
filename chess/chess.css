@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    background-color: bisque;
+    height: 100vh;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+   
+}
+.r1{
+   display: flex;
+}
+.r2{
+    display: flex;
+}
+.w{
+    
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+.b{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
