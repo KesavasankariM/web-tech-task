@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    background: linear-gradient(pink,skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer>.card1{
+    height: 200px;
+    width: 300px;
+    background-color: bisque;
+    animation: Movingbox 2s ease-in infinite alternate;
+}
+@keyframes Movingbox {
+    from{
+
+    }
+    to{
+        transform: translateX(400px);
+        border-radius: 50%;
+        background: linear-gradient(rgb(212, 28, 28),yellow);
+    }
+    
+}
+.outer2{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(limegreen,lightgreen);
+}
+.outer2>.card2{
+    height: 400px;
+    width: 450px;
+    animation: rotatebox 3s ease-in infinite ;
+    background-color: rgba(42, 115, 15, 0.793);
+}
+.outer2>.card3{
+     height: 400px;
+    width: 450px;
+    background-color:rgb(117, 184, 117);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card3>.circle{
+    width: 150px;
+    height: 150px;
+   border-top: 5px solid green;
+    border-radius: 50%;
+    animation: rotatebox 3s linear infinite;
+}
+
+@keyframes rotatebox {
+    from{
+
+    }
+    to{
+        transform: rotate(360deg);
+        /* border-radius: 15px; */
+        /* background: linear-gradient(rgb(137, 126, 126),rgb(182, 116, 116)); */
+
+    }
+    
+}
+.outer3{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.outer3>.orange{
+    height: 100vh;
+    flex-basis: 33%;
+    background-color: orange;
+}
+.outer3>.white{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 34%;
+    background-color: white;
+   
+}
+.outer3>.white>img{
+    height: 90%;
+    animation: flag 3s linear infinite;
+    border-radius: 50%;
+}
+.outer3>.green{
+    height: 100vh;
+    flex-basis: 33%;
+    background-color: green;
+}
+@keyframes flag {
+    from{}
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.outer4{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+.outer4>.circle1{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+     border: 5px solid white;
+    animation: circle2 3s linear Znfinite;
+
+}
+.outer4>.circle1>.innercircle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+   
+}
+@keyframes circle2 {
+    from{}
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.outer5{
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    
+}
+.outer5>.dot{
+    height: 100vh;
+    flex-basis: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.outer5>.dot>.c{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+   
+    animation: updown 2s linear infinite alternate ;
+}
+#r1{
+    background-color: red;
+   
+}
+#r2{
+    background-color: blueviolet;
+     animation-delay: 0.1s;
+}
+#r3{
+    background-color: yellow;
+     animation-delay: 0.2s;
+
+}
+#r4{
+    background-color: green;
+     animation-delay: 0.3s;
+}
+#r5{
+    background-color: pink;
+     animation-delay: 0.4s;
+}
+.outer5>.name{
+    flex-basis: 50%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+   color: white;
+   font-weight: bold;
+   font-size: 30px;
+   
+    
+}
+.outer5>.name>.c{
+    animation: updown 2s linear infinite alternate ;
+    text-shadow:  0 0 5px whitesmoke,
+        0 0 10px whitesmoke,
+        0 0 20px whitesmoke,
+        0 0 40px whitesmoke;
+}
+#e{
+    animation-delay: 0.1s;
+}
+#s{
+    animation-delay: 0.2s;
+}
+#a{
+    animation-delay: 0.3s;
+}
+#v{
+    animation-delay: 0.4s;
+}
+#a1{
+    animation-delay: 0.5s;
+}
+@keyframes updown {
+    from{
+        transform: translateY(100px);
+    }
+    to{
+          transform: translateY(-100px);
+    }
+    
+}
