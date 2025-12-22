@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+.inner{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 15px;
+}
+.inner>nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.inner>nav>ul{
+    display: flex;
+    gap: 25px;
+}
+.inner>nav>ul>li{
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 24px;
+
+}
+.button>button{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: blue;
+    border: none;
+    font-weight: bold;
+    color: white;
+    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main>.right{
+    height: 500px;
+    flex-basis: 50%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main>.left{
+    height: 500px;
+    flex-basis: 50%;
+  
+}
+main>.right>img{
+    height: 80%;
+    
+}
+main>.left{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 20px;
+    gap: 10px;
+    flex-direction: column;
+
+}
+main>.left>h1{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+main>.left>p{
+    font-size: 20px;
+    text-align: justify;
+}
+main.left>.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+
+     
+}
+main>.left>.box>input{
+    padding: 11px;
+    width:300px;
+    margin-top: 10px;
+
+   
+}
+main>.left>.box>button{
+    padding: 12px;
+    background-color: blue;
+    width: 100px;
+    border-radius: 5px;
+     border: none;
+     font-weight: bold;
+     color: white;
+   
+     
+     
+
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+    
+    
+}
+footer>.leftfooter{
+    display: flex;
+    flex-basis: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 40px;
+    margin-left: 35px;
+    
+    
+}
+.rightfooter{
+    display: flex;
+    
+    justify-content: flex-end;
+    flex-basis: 50%;
+     margin-left: 500px;
+    margin-bottom: 15px;
+    gap: 15px;
+
+}
+.rightfooter>.info{
+    display: flex;
+    
+    flex-basis: 50%;
+    flex-direction: column;
+  
+    
+}
+.rightfooter>img{
+    height: 35px;
+    
+    
+}
