@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5A9CB5;
+    
+}
+.outer>.inner{
+    height: 100vh;
+    width: 1300px;
+    
+}
+.outer>.inner>nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+   
+    
+}
+.outer>.inner>nav>ul{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+     text-transform: uppercase;
+    
+     
+}
+.outer>.inner>nav>button{
+    padding: 15px;
+     font-weight: bold;
+    text-transform: capitalize;
+    background-color: #FACE68;
+    border: none;
+    border-radius: 10px;
+     box-shadow: 2px 2px 4px black;
+
+}
+ul>li{
+    position: relative;
+}
+ul>li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #FACE68;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s ease-in;
+}
+ul>li:hover::after{
+    width: 100%;
+}
+
+
+.inner1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inner1>.left{
+    flex-basis: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.inner1>.left>h1{
+    font-size: 35px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.inner1>.left>h1>span{
+    color: #FACE68;
+}
+.inner1>.left>p{
+    font-size: 25px;
+    padding-left: 45px;
+}
+.inner1>.left>button{
+    padding: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #FACE68;
+     border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    
+}
+.inner1>.right{
+    flex-basis: 50%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inner1>.right>.circle{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: #FACE68;
+    position: relative;
+     box-shadow: 3px 4px 5px black;
+
+}
+.inner1>.right>img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: absolute;
+
+   
+}
