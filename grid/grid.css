@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    background: linear-gradient(to right top,pink,skyblue);
+    display: grid;
+    grid-template-columns: 200px 230px 120px;
+    grid-auto-rows: 120px;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+.outer>.box{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: none;
+
+    
+}
+.outer>#box1{
+ grid-column: span 3;
+ background-color: burlywood;
+ 
+}
+.outer>#box3{
+ grid-column: span 2;
+ background-color: brown;
+ 
+}
+.outer>#box2{
+    grid-row: span 2;
+    background-color: chocolate;
+    
+}
+.outer>#box8{
+    grid-row: span 2;
+    background-color: rgb(173, 106, 19);
+}
+.outer>#box4{
+    background-color: blue;
+}
+.outer>#box5{
+    background-color:chartreuse;
+}
+.outer>#box6{
+    background-color:pink;
+}
+.outer>#box7{
+    background-color: yellow;
+}
+.outer>#box9{
+    background-color: green;
+}
+.outer>#box10{
+    background-color: gray;
+}
